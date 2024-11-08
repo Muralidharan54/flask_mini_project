@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1>Welcome to Real Estate Analysis System</h1>
+    {% if current_user.is_authenticated %}
+        <p>Welcome back, {{ current_user.username }}! Your role is: {{ current_user.role }}</p>
+        <a href="{{ url_for('dashboard') }}" class="btn">Go to Dashboard</a>
+    {% else %}
+        <p>Please login or register to access the dashboard.</p>
+        <a href="{{ url_for('login') }}" class="btn">Login</a>
+        <a href="{{ url_for('register') }}" class="btn">Register</a>
+    {% endif %}
+{% endblock %}

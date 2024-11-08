@@ -1,0 +1,124 @@
+2024-11-07 14:38:19,703 DEBUG: extraction done [in C:\chubb\python\project_folders\real_estate\etl.py:53]
+2024-11-07 14:42:33,145 INFO: Starting ETL process [in C:\chubb\python\project_folders\real_estate\app.py:185]
+2024-11-07 14:42:33,669 DEBUG: extraction done [in C:\chubb\python\project_folders\real_estate\etl.py:53]
+2024-11-07 14:42:33,670 DEBUG: Extracted 6000 records [in C:\chubb\python\project_folders\real_estate\app.py:187]
+2024-11-07 14:42:33,670 ERROR: ETL process failed: 'RealEstateETL' object has no attribute 'transform_data' [in C:\chubb\python\project_folders\real_estate\app.py:196]
+2024-11-07 14:42:46,882 ERROR: Exception on /dashboard [POST] [in C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\chubb\python\project_folders\real_estate\app.py", line 116, in dashboard
+    bed_avg_price = avg_val('bed', df, 'price')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\chubb\python\project_folders\real_estate\app.py", line 47, in avg_val
+    x_axis = set(df[col_name1])
+                 ~~^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\pandas\core\frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\pandas\core\indexes\range.py", line 418, in get_loc
+    raise KeyError(key)
+KeyError: 'bed'
+2024-11-07 15:00:14,507 ERROR: Exception on /dashboard [GET] [in C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\chubb\python\project_folders\real_estate\app.py", line 112, in dashboard
+    bed_avg_price = avg_val('bed', df, 'price')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\chubb\python\project_folders\real_estate\app.py", line 43, in avg_val
+    x_axis = set(df[col_name1])
+                 ~~^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\pandas\core\frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\pandas\core\indexes\range.py", line 418, in get_loc
+    raise KeyError(key)
+KeyError: 'bed'
+2024-11-07 15:00:20,930 INFO: Starting ETL process [in C:\chubb\python\project_folders\real_estate\app.py:181]
+2024-11-07 15:00:21,531 DEBUG: extraction done [in C:\chubb\python\project_folders\real_estate\etl.py:53]
+2024-11-07 15:00:21,532 DEBUG: Extracted 6000 records [in C:\chubb\python\project_folders\real_estate\app.py:183]
+2024-11-07 15:00:21,532 ERROR: ETL process failed: 'RealEstateETL' object has no attribute 'transform_data' [in C:\chubb\python\project_folders\real_estate\app.py:192]
+2024-11-07 15:00:23,356 INFO: Starting ETL process [in C:\chubb\python\project_folders\real_estate\app.py:181]
+2024-11-07 15:00:23,714 DEBUG: extraction done [in C:\chubb\python\project_folders\real_estate\etl.py:53]
+2024-11-07 15:00:23,715 DEBUG: Extracted 6000 records [in C:\chubb\python\project_folders\real_estate\app.py:183]
+2024-11-07 15:00:23,715 ERROR: ETL process failed: 'RealEstateETL' object has no attribute 'transform_data' [in C:\chubb\python\project_folders\real_estate\app.py:192]
+2024-11-07 15:01:24,774 ERROR: Exception on /dashboard [GET] [in C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\chubb\python\project_folders\real_estate\app.py", line 112, in dashboard
+    bed_avg_price = avg_val('bed', df, 'price')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\chubb\python\project_folders\real_estate\app.py", line 43, in avg_val
+    x_axis = set(df[col_name1])
+                 ~~^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\pandas\core\frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mural\anaconda3\Lib\site-packages\pandas\core\indexes\range.py", line 418, in get_loc
+    raise KeyError(key)
+KeyError: 'bed'
+2024-11-07 15:01:32,617 INFO: Starting ETL process [in C:\chubb\python\project_folders\real_estate\app.py:181]
+2024-11-07 15:01:33,147 DEBUG: extraction done [in C:\chubb\python\project_folders\real_estate\etl.py:53]
+2024-11-07 15:01:33,147 DEBUG: Extracted 6000 records [in C:\chubb\python\project_folders\real_estate\app.py:183]
+2024-11-07 15:01:33,152 ERROR: ETL process failed: Can only use .dt accessor with datetimelike values [in C:\chubb\python\project_folders\real_estate\app.py:192]
+2024-11-07 15:04:46,267 INFO: Starting ETL process [in C:\chubb\python\project_folders\real_estate\app.py:181]
+2024-11-07 15:04:46,784 DEBUG: extraction done [in C:\chubb\python\project_folders\real_estate\etl.py:55]
+2024-11-07 15:04:46,784 DEBUG: Extracted 6000 records [in C:\chubb\python\project_folders\real_estate\app.py:183]
+2024-11-07 15:04:46,803 DEBUG: transform done [in C:\chubb\python\project_folders\real_estate\etl.py:67]
+2024-11-07 15:04:46,803 DEBUG: Transformed 5941 records [in C:\chubb\python\project_folders\real_estate\app.py:186]
+2024-11-07 15:04:46,804 DEBUG:       brokered_by    status      price  bed  bath  acre_lot  ...  zip_code house_size prev_sold_date  day  month  year
+0         21163.0  for_sale   525000.0  3.0   3.0      0.45  ...    1001.0     2314.0     2014-06-25   25      6  2014
+1         67455.0  for_sale   289900.0  3.0   2.0      0.36  ...    1001.0     1276.0     2012-10-12   12     10  2012
+2         97400.0  for_sale   384900.0  3.0   2.0      0.46  ...    1001.0     1476.0     1986-11-20   20     11  1986
+3         33714.0  for_sale   199999.0  3.0   2.0      1.76  ...    1001.0     1968.0     2008-09-19   19      9  2008
+4         22188.0  for_sale   419000.0  4.0   2.0      2.00  ...    1002.0     1607.0     2005-07-25   25      7  2005
+...           ...       ...        ...  ...   ...       ...  ...       ...        ...            ...  ...    ...   ...
+1995      79880.0  for_sale   599900.0  4.0   3.0      1.02  ...    8876.0     2150.0     2015-06-01    1      6  2015
+1996      79880.0  for_sale   309900.0  2.0   3.0      0.23  ...    8876.0     1593.0     2018-11-20   20     11  2018
+1997       1084.0  for_sale   259900.0  2.0   2.0      0.01  ...    8876.0     1320.0     2021-01-26   26      1  2021
+1998      51477.0  for_sale  1350000.0  5.0   5.0      0.17  ...    7090.0     3550.0     2017-11-03    3     11  2017
+1999      91664.0  for_sale   275000.0  2.0   1.0      0.05  ...    8869.0     1200.0     2021-12-27   27     12  2021
+
+[5941 rows x 15 columns] [in C:\chubb\python\project_folders\real_estate\etl.py:72]
+2024-11-07 15:04:47,522 INFO: ETL process completed successfully [in C:\chubb\python\project_folders\real_estate\app.py:189]

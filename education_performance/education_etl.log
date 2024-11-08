@@ -1,0 +1,63 @@
+2024-11-07 21:47:33,473 INFO: Starting ETL process [in C:\chubb\python\project_folders\education_performance\app.py:172]
+2024-11-07 21:47:34,602 DEBUG: extraction done [in C:\chubb\python\project_folders\education_performance\etl.py:50]
+2024-11-07 21:47:34,603 DEBUG: Extracted 3964 records [in C:\chubb\python\project_folders\education_performance\app.py:174]
+2024-11-07 21:47:34,612 DEBUG: Transformed 3825 records [in C:\chubb\python\project_folders\education_performance\app.py:177]
+2024-11-07 21:47:34,613 DEBUG:       Hours_Studied  Attendance Parental_Involvement  ... Distance_from_Home  Gender  Exam_Score
+0                23          84                  Low  ...               Near    Male          67
+1                19          64                  Low  ...           Moderate  Female          61
+2                24          98               Medium  ...               Near    Male          74
+3                29          89                  Low  ...           Moderate    Male          71
+4                19          92               Medium  ...               Near  Female          70
+...             ...         ...                  ...  ...                ...     ...         ...
+1316             25          69                 High  ...               Near  Female          68
+1317             23          76                 High  ...               Near  Female          69
+1318             20          90               Medium  ...               Near  Female          68
+1319             10          86                 High  ...                Far  Female          68
+1320             15          67               Medium  ...               Near    Male          64
+
+[3825 rows x 20 columns] [in C:\chubb\python\project_folders\education_performance\etl.py:61]
+2024-11-07 21:47:35,492 ERROR: ETL process failed: (pymysql.err.ProgrammingError) (1146, "Table 'climate_db.education_data' doesn't exist")
+[SQL: INSERT INTO education_data (hours_studied, attendance, sleep_hours, physical_activity, learning_disabilities, parental_involvement, parental_education_level, distance_from_home, peer_influence, exam_score) VALUES (%(hours_studied)s, %(attendance)s, %(sleep_hours)s, %(physical_activity)s, %(learning_disabilities)s, %(parental_involvement)s, %(parental_education_level)s, %(distance_from_home)s, %(peer_influence)s, %(exam_score)s)]
+[parameters: [{'hours_studied': 23, 'attendance': 84, 'sleep_hours': 7, 'physical_activity': 3, 'learning_disabilities': 'No', 'parental_involvement': 'Low', 'parental_education_level': 'High School', 'distance_from_home': 'Near', 'peer_influence': 'Positive', 'exam_score': 67}, {'hours_studied': 19, 'attendance': 64, 'sleep_hours': 8, 'physical_activity': 4, 'learning_disabilities': 'No', 'parental_involvement': 'Low', 'parental_education_level': 'College', 'distance_from_home': 'Moderate', 'peer_influence': 'Negative', 'exam_score': 61}, {'hours_studied': 24, 'attendance': 98, 'sleep_hours': 7, 'physical_activity': 4, 'learning_disabilities': 'No', 'parental_involvement': 'Medium', 'parental_education_level': 'Postgraduate', 'distance_from_home': 'Near', 'peer_influence': 'Neutral', 'exam_score': 74}, {'hours_studied': 29, 'attendance': 89, 'sleep_hours': 8, 'physical_activity': 4, 'learning_disabilities': 'No', 'parental_involvement': 'Low', 'parental_education_level': 'High School', 'distance_from_home': 'Moderate', 'peer_influence': 'Negative', 'exam_score': 71}, {'hours_studied': 19, 'attendance': 92, 'sleep_hours': 6, 'physical_activity': 4, 'learning_disabilities': 'No', 'parental_involvement': 'Medium', 'parental_education_level': 'College', 'distance_from_home': 'Near', 'peer_influence': 'Neutral', 'exam_score': 70}, {'hours_studied': 19, 'attendance': 88, 'sleep_hours': 8, 'physical_activity': 3, 'learning_disabilities': 'No', 'parental_involvement': 'Medium', 'parental_education_level': 'Postgraduate', 'distance_from_home': 'Near', 'peer_influence': 'Positive', 'exam_score': 71}, {'hours_studied': 29, 'attendance': 84, 'sleep_hours': 7, 'physical_activity': 2, 'learning_disabilities': 'No', 'parental_involvement': 'Medium', 'parental_education_level': 'High School', 'distance_from_home': 'Moderate', 'peer_influence': 'Neutral', 'exam_score': 67}, {'hours_studied': 25, 'attendance': 78, 'sleep_hours': 6, 'physical_activity': 2, 'learning_disabilities': 'No', 'parental_involvement': 'Low', 'parental_education_level': 'High School', 'distance_from_home': 'Far', 'peer_influence': 'Negative', 'exam_score': 66}  ... displaying 10 of 3825 total bound parameter sets ...  {'hours_studied': 10, 'attendance': 86, 'sleep_hours': 6, 'physical_activity': 3, 'learning_disabilities': 'No', 'parental_involvement': 'High', 'parental_education_level': 'High School', 'distance_from_home': 'Far', 'peer_influence': 'Positive', 'exam_score': 68}, {'hours_studied': 15, 'attendance': 67, 'sleep_hours': 9, 'physical_activity': 4, 'learning_disabilities': 'No', 'parental_involvement': 'Medium', 'parental_education_level': 'Postgraduate', 'distance_from_home': 'Near', 'peer_influence': 'Positive', 'exam_score': 64}]]
+(Background on this error at: https://sqlalche.me/e/20/f405) [in C:\chubb\python\project_folders\education_performance\app.py:183]
+2024-11-07 21:48:33,657 INFO: Starting ETL process [in C:\chubb\python\project_folders\education_performance\app.py:172]
+2024-11-07 21:48:34,782 DEBUG: extraction done [in C:\chubb\python\project_folders\education_performance\etl.py:50]
+2024-11-07 21:48:34,782 DEBUG: Extracted 3964 records [in C:\chubb\python\project_folders\education_performance\app.py:174]
+2024-11-07 21:48:34,790 DEBUG: Transformed 3825 records [in C:\chubb\python\project_folders\education_performance\app.py:177]
+2024-11-07 21:48:34,791 DEBUG:       Hours_Studied  Attendance Parental_Involvement  ... Distance_from_Home  Gender  Exam_Score
+0                23          84                  Low  ...               Near    Male          67
+1                19          64                  Low  ...           Moderate  Female          61
+2                24          98               Medium  ...               Near    Male          74
+3                29          89                  Low  ...           Moderate    Male          71
+4                19          92               Medium  ...               Near  Female          70
+...             ...         ...                  ...  ...                ...     ...         ...
+1316             25          69                 High  ...               Near  Female          68
+1317             23          76                 High  ...               Near  Female          69
+1318             20          90               Medium  ...               Near  Female          68
+1319             10          86                 High  ...                Far  Female          68
+1320             15          67               Medium  ...               Near    Male          64
+
+[3825 rows x 20 columns] [in C:\chubb\python\project_folders\education_performance\etl.py:61]
+2024-11-07 21:49:43,611 INFO: Starting ETL process [in C:\chubb\python\project_folders\education_performance\app.py:172]
+2024-11-07 21:49:44,805 DEBUG: extraction done [in C:\chubb\python\project_folders\education_performance\etl.py:50]
+2024-11-07 21:49:44,806 DEBUG: Extracted 3964 records [in C:\chubb\python\project_folders\education_performance\app.py:174]
+2024-11-07 21:49:44,817 DEBUG: Transformed 3825 records [in C:\chubb\python\project_folders\education_performance\app.py:177]
+2024-11-07 21:49:44,818 DEBUG:       Hours_Studied  Attendance Parental_Involvement  ... Distance_from_Home  Gender  Exam_Score
+0                23          84                  Low  ...               Near    Male          67
+1                19          64                  Low  ...           Moderate  Female          61
+2                24          98               Medium  ...               Near    Male          74
+3                29          89                  Low  ...           Moderate    Male          71
+4                19          92               Medium  ...               Near  Female          70
+...             ...         ...                  ...  ...                ...     ...         ...
+1316             25          69                 High  ...               Near  Female          68
+1317             23          76                 High  ...               Near  Female          69
+1318             20          90               Medium  ...               Near  Female          68
+1319             10          86                 High  ...                Far  Female          68
+1320             15          67               Medium  ...               Near    Male          64
+
+[3825 rows x 20 columns] [in C:\chubb\python\project_folders\education_performance\etl.py:61]
+2024-11-07 21:53:04,468 INFO: Starting ETL process [in C:\chubb\python\project_folders\education_performance\app.py:172]
+2024-11-07 21:53:05,718 DEBUG: extraction done [in C:\chubb\python\project_folders\education_performance\etl.py:50]
+2024-11-07 21:53:05,720 DEBUG: Extracted 3964 records [in C:\chubb\python\project_folders\education_performance\app.py:174]
+2024-11-07 21:53:05,732 DEBUG: Transformed 3825 records [in C:\chubb\python\project_folders\education_performance\app.py:177]
+2024-11-07 21:53:06,812 DEBUG: ETL process completed successfully [in C:\chubb\python\project_folders\education_performance\app.py:180]
